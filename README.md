@@ -75,3 +75,13 @@ so avi kya karna perega hum logoko us pat ka access isko dedena perega.
 git remote set-url origin https://<PAT>@github.com/my githubname/repo ka naam jisko hum ne connect kartna tha from local or jo repo humne github p banaya tha.
 iske baad if we run git push origin master
 we will see we are able to connect and able to push the file from local to remote.
+ab yea local se remote ka safar ho gaya now we will do the reverse first create any file inside the remote github repo which is connected to our local.
+fir hum logoko run karna pedega "git pull origin master"
+
+
+through ssh
+the main funda in ssh that that private and public key if we have a keypair then we do not need to create but if we do not have a key pair then we need to create using ssh-keygen
+then the private key will be kept in local and the public key will kept in github. Now how to set the public key in github for that first go to global setting then > ssh and gpg key > new ssh key > then paste the public key and add thats all.
+and then use git clone <the ssh link for that perticular folder> and thats it.
+
+git diff se hum dekh sakte h ki pehle hum kya kiye the avi kar ho raha hai. like agar main koi repo ko clone karke aapne local m kuch change karta hu tho very ovious it will show in my remote tab we can check through "git diff"
